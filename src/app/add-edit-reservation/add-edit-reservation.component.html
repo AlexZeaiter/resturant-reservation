@@ -1,0 +1,36 @@
+<div style="border: solid; border-radius: 25px; width: 450px;">
+    <h1>Add New Reservation</h1>
+    <div>
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="form">
+            <div class="form-group">
+                <label for="Date">Date</label>
+                <input required type="date" name="Date" class="form-control" formControlName="date" style="width: 166px;">
+            </div>
+            <br />
+            <div>
+                <label for="Time">Time</label>
+                <input matInput required [ngxTimepicker]="picker" name="Time" class="form-control"
+                    formControlName="time" style="margin-left: 100px;">
+                <ngx-material-timepicker #picker class="form-control"></ngx-material-timepicker>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="PartyName">Party Name</label>
+                <input required type="text" name="PartyName" class="form-control" formControlName="partyName">
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="NumberOfAttend">Number of Attendents</label>
+                <input required type="number" name="NumberOfAttend" class="form-control" formControlName="numberOfAttendents">
+            </div>
+            <pre></pre>
+            <br />
+            <br />
+            <button class="btn btn-primary" type="submit">Add Reservation</button>
+            <br />
+            <br />
+            <button class="btn btn-primary" (click)="cancel()">Cancel</button>
+        </form>
+        <br />
+    </div>
+</div>

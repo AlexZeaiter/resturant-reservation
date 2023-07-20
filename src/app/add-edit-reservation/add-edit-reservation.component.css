@@ -1,0 +1,29 @@
+div {
+    text-align: center;
+    align-items: center;
+}
+
+	.form {
+		margin: 0 auto;
+		width: 350px;
+        text-align: center;
+        align-items: center;
+	}
+
+	.form label{
+		display: inline-block;
+		text-align: right;
+		float: left;
+	}
+
+	.form input{
+		display: inline-block;
+		text-align: left;
+		float: right;
+	}
+button {
+    text-align: center;
+    background-color: black;
+    color: gold;
+    border-radius: 25px;
+}

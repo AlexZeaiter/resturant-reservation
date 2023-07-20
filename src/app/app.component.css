@@ -1,0 +1,7 @@
+button{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px 1px rgba(189, 177, 125, 0.2);
+  color: gold;
+  border-radius: 25px;
+}
